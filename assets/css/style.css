@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  background: url("../img/hero-bg2.jpg") top right;
   background-size: cover;
   position: relative;
 }
@@ -657,7 +657,7 @@ section {
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
+/* .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -674,7 +674,15 @@ section {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffb727;
+  margin-bottom: 10px;
+}
+.resume .resume-item h6 {
+  line-height: 18px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffb727;
@@ -712,8 +720,125 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #82909c;
+} */
+
+#resume hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #ffb727;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
 }
 
+.section-title.center {
+  padding: 25px 0 45px 0;
+}
+
+.timeline {
+position: relative;
+padding: 0;
+list-style: none;
+}
+.timeline:before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 40.5px;
+width: 2px;
+margin-left: -1.5px;
+background-color: #eee;
+}
+.timeline>li {
+position: relative;
+margin-bottom: 50px;
+min-height: 50px;
+}
+.timeline>li:before, .timeline>li:after {
+content: " ";
+display: table;
+}
+.timeline>li:after {
+clear: both;
+}
+.timeline>li .timeline-panel {
+float: right;
+position: relative;
+width: 100%;
+padding: 0 20px 0 100px;
+text-align: left;
+}
+.timeline>li .timeline-panel:before {
+right: auto;
+left: -15px;
+border-right-width: 15px;
+border-left-width: 0;
+}
+.timeline>li .timeline-panel:after {
+right: auto;
+left: -14px;
+border-right-width: 14px;
+border-left-width: 0;
+}
+.timeline>li .timeline-image {
+z-index: 100;
+position: absolute;
+left: 0;
+width: 80px;
+height: 80px;
+margin-left: 0;
+border: 1px solid #ffb727;
+border-radius: 100%;
+text-align: center;
+/*background: #1d1d1d;*/
+background: #ffb727;
+}
+.timeline>li .timeline-image h4 {
+margin-top: 15px;
+font-size: 15px;
+text-transform: uppercase;
+line-height: 15px;
+color: #fff;
+}
+.timeline>li.timeline-inverted>.timeline-panel {
+float: right;
+padding: 0 20px 0 100px;
+text-align: left;
+}
+.timeline>li.timeline-inverted>.timeline-panel:before {
+right: auto;
+left: -15px;
+border-right-width: 15px;
+border-left-width: 0;
+}
+.timeline>li.timeline-inverted>.timeline-panel:after {
+right: auto;
+left: -14px;
+border-right-width: 14px;
+border-left-width: 0;
+}
+.timeline>li:last-child {
+margin-bottom: 40px;
+}
+.timeline .timeline-heading h4 {
+margin-top: 0;
+text-transform: uppercase;
+font-size: 16px;
+}
+.timeline .timeline-heading h2 {
+margin-top: 30px;
+}
+.timeline .timeline-heading h4.subheading {
+text-transform: none;
+color: #ffb727;
+font-size: 20px;
+}
+.timeline .timeline-body>p, .timeline .timeline-body>ul {
+margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
@@ -1172,13 +1297,13 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #687683;
+  color: #fff;
   line-height: 1;
   margin: 0 8px;
   transition: 0.3s;
   padding: 14px;
   border-radius: 50px;
-  border: 1px solid #dde1e4;
+  border: 1px solid #ffb727;
 }
 
 .contact .social-links a:hover {
@@ -1371,3 +1496,209 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+
+/* --------------------------
+EXTRA
+-----------------------------
+*/
+@media(min-width:768px) {
+  .timeline:before {
+    left: 50.2%;
+  }
+  .timeline>li {
+    margin-bottom: 40px;
+    min-height: 100px;
+  }
+  .timeline>li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline>li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  .timeline>li .timeline-image h4 {
+    margin-top: 16px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+  }
+  
+  @media(min-width:992px) {
+  .timeline>li {
+    min-height: 150px;
+  }
+  .timeline>li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline>li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline>li .timeline-image h4 {
+    margin-top: 30px;
+    font-size: 28px;
+    line-height: 26px;
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding: 0 20px 20px;
+  }
+  }
+  
+  @media(min-width:1200px) {
+  .timeline>li {
+    min-height: 170px;
+  }
+  .timeline>li .timeline-panel {
+    padding: 10px 20px 20px 100px;
+  }
+  .timeline>li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline>li .timeline-image h4 {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding: 10px 100px 20px 20px;
+  }
+  }
+  
+  @media only screen and (min-width: 1170px) {
+    .cd-is-hidden {
+      visibility: hidden;
+    }
+  
+      .timeline-image.cd-timeline__img--bounce-in {
+      visibility: visible;
+      -webkit-animation: cd-bounce-1 0.9s;
+              animation: cd-bounce-1 0.9s;
+    }
+  
+      .timeline-panel.cd-timeline__content--bounce-in {
+      visibility: visible;
+      -webkit-animation: cd-bounce-2 0.9s;
+              animation: cd-bounce-2 0.9s;
+    }
+  
+      .timeline-block:nth-child(even) .timeline-panel.cd-timeline__content--bounce-in {
+      -webkit-animation: cd-bounce-2-inverse 0.9s;
+              animation: cd-bounce-2-inverse 0.9s;
+    }
+  }
+  @-webkit-keyframes cd-bounce-1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes cd-bounce-1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
+  @-webkit-keyframes cd-bounce-2 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @keyframes cd-bounce-2 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes cd-bounce-2-inverse {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @keyframes cd-bounce-2-inverse {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }

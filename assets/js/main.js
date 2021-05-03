@@ -24,6 +24,20 @@ let letter = "";
     }
     setTimeout(type, 300);
   }());
+  function sendEmail(){
+	var email = document.getElementById('email').value;
+	var subject = document.getElementById('name').value+" "+"Commented";
+	var message = document.getElementById('message').value;
+	Email.send({
+    SecureToken : "a38f54dd-c865-482f-8161-284efde45a4e",
+    To : 'liviofranm@gmail.com',
+    From : email,
+    Subject : subject,
+    Body : message
+}).then(
+  message => alert("Email Sent")
+);
+	};
 (function() {
   "use strict";
 
