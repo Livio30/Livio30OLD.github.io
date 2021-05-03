@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   height: 80px;
-  background: rgba(25, 28, 31, 0.8);
+  background: #191c1fcc;
 }
 
 #header.header-transparent {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   height: 60px;
-  background: rgba(25, 28, 31, 0.8);
+  background: #191c1fcc;
 }
 
 /*--------------------------------------------------------------
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #191c1fcc;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #FFF;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #191c1fcc;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 14px;
-  color: #3b434a;
+  color: #fff;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #191c1fcc;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
