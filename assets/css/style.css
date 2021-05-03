@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 40px;
+  font-size: 64px;
 
   /* font-size: px; */
   /* font-family: "Satisfy", serif; */
@@ -466,7 +466,19 @@ section {
     font-size: 38px;
   }
 }
-
+.btn{
+  padding: 10px 30px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn-default{
+  background-color: #ffb727;
+  color: #FFF;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -525,8 +537,11 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  .btn {
+    padding: 5px 15px;
+    font-size: 12px;
 }
-
+}
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
